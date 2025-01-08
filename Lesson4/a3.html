@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus</title>
+    <style>
+        
+        form {
+           
+            border: 1px solid #d7d7d7;
+            background-color: rgb(232, 202, 202);
+        }
+        input[type=text],
+        input[type=password],
+        input[type=email]
+        {
+            width: 100%;
+            display: inline-block;
+            border: 1px solid rgb(0, 0, 4);
+            box-sizing: border-box;
+        }
+        input:focus {
+            background-color:rgb(247, 245, 234);
+        }
+        button {
+            background-color: #d295d2;
+            color: #FFF;
+            cursor: pointer;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+                
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <div class="container">
+            <label>Username</label>
+            <input type="text" name="uname" required placeholder="Enter your name"><br>
+            <label> email </label><br>
+            <input type="email" name="email" required>
+            <br>
+            <label>Password</label>
+            <input type="password" name="pass" required>
+            <button type="submit">Sign in</button>
+        </div>
+    </form>
+
+</body>
+</html>
